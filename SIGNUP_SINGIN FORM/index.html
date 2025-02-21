@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<div class="containner">
+<div class="form-box">
+<h1  class="tittle" >Sign Up</h1>
+<div class="underline"></div>
+<form action="#">
+    <div class="input-group">
+        <div class="input-field " id="namefield">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Name" >
+        </div><!--input-field end-->    
+        <div class="input-field">
+        <i class="fa-solid fa-at"></i>
+        <input type="email" placeholder="Email">
+        </div><!--input-field end-->
+        <div id="pd"></div>
+        <div class="input-field" id="phone">
+            <i class="fa-solid fa-phone"></i>
+         <input type="text" name="" id="" placeholder="Phone no" onkeyup="val(this)">
+        </div>
+        <div class="input-field">
+        <i class="fa-solid fa-key"></i>   
+        <input type="password" placeholder="password" >
+        </div><!--input-field end-->
+        <div id="cp"></div>
+        <div class="input-field">
+            <i class="fa-solid fa-key"></i>   
+            <input type="password" placeholder="confirm password" id="pass" onkeyup="check(this)">
+            </div><!--input-field end-->
+            
+        <p>password suggestion <a href="#">Click Here</a></p>
+       
+    </div><!--input group end-->
+    <div class="btn-field">
+        <button id="signup">Sign Up</button>
+        <button class="disable ">Sign In</button>
+        
+    </div><!--btn-field end-->      
+</form>
+</div><!--form-box end-->
+</div><!--containner end-->
+</body>
+<script src="script.js"></script>
+</html>
