@@ -4,22 +4,30 @@ var signIn=document.querySelector(".disable");
 var nameField=document.querySelector("#namefield");
 var tittle=document.querySelector(".tittle");
 var Underline=document.querySelector(".underline");
+var text=document.querySelector(".text")
+var conp=document.querySelector("#conp")
 
 signIn.addEventListener("click",()=>{
     nameField.style.maxHeight="0px";
     phone.style.maxHeight="0%";
+    conp.style.maxHeight="0%"
     tittle.innerHTML="Sign In";
+    text.innerHTML="forget password"
     signUp.classList.add("disable");
     signIn.classList.remove("disable");
     Underline.style.transform="translateX(35px)"
+   
 });
 signUp.addEventListener("click",()=>{
     nameField.style.maxHeight="60px";
     phone.style.maxHeight="60px"
+    conp.style.maxHeight="60%"
     tittle.innerHTML="Sign Up";
+    text.innerHTML="password suggestion"
     signUp.classList.remove("disable");
     signIn.classList.add("disable");
     Underline.style.transform="translateX(0px)";
+    
 });
 
 document.getElementById("pd").style.color="red"
