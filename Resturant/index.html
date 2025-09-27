@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="containner1">
+            <ul>
+                <div class="logo">
+                    <img src="./images/foodies.jfif" alt="">
+                </div>
+                <div class="logo-tittle">
+                    <span>
+                        <h2>Foodie's resturant</h2>
+
+                    </span>
+                </div>
+                <li>
+                    <div class="icon"><i class="fa-solid fa-house"></i><a href="#">Home</a></div>
+                </li>
+                <li>
+                    <div class="icon"><i class="fa-solid fa-book-open"></i><a href="#">Menu</a></div>
+                </li>
+                <li>
+                    <div class="icon"><i class="fa-solid fa-newspaper"></i><a href="#">Articles</a></div>
+                </li>
+                <li>
+                    <div class="icon"><i class="fa-solid fa-gear"></i><a href="#">Settings</a></div>
+                </li>
+                <li>
+                    <div class="icon"><i class="fa-solid fa-address-book"></i><a href="#">Contact</a></div>
+                </li>
+            </ul>
+            <div class="delivery-info">
+                <span>
+                    <h2>Faster <h2>Delivery</h2>
+                    </h2>
+                </span>
+                <ul>
+                    <li><a href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="containner2">
+                <div class="header">
+                    <div class="head-tittle">
+                        <h2>Welcome to <span>
+                                <h4>Foodies</h4>
+                            </span></h2>
+                        <div class="headimg">
+                            <img src="./images/headlogo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="search" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="cart-item-count"></div>
+                    </div>
+                    
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-xmark " id="cart-close"></i>
+                    <h2 class="cart-tittle">Shop</h2>
+                    <div class="cart-content">
+                        <!-- <div class="cart-box">
+                            <img src="./images/pannerbuttermasala.jpg" alt="">
+                            <div class="cart-details">
+                                <h2 class="cart-product-tittle">Panner Butter Masala</h2>
+                                <span class="cart-price">$100</span>
+                                <div class="cart-quantity">
+                                    <button id="decrement">-</button>
+                                    <span class="number">1</span>
+                                    <button id="increment">+</button>
+                                </div>
+                            </div>
+                              <i class="fa-solid fa-trash cart-remove"></i>
+                        </div> -->
+                    </div>
+                    <div class="total">
+                        <h2 class="total-tittle">Total</h2>
+                        <div class="total-price">0</div>
+                    </div>
+                    <button id="btn-buy">Buynow</button>
+                </div>
+                 <section class="shop">
+                <h2 class="section-tittle">Food's</h2>
+                <div class="product-content">
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/pannerburger.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">pannerburger</h2>
+                        <div class="cart-price">
+                            <span class="price">50$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/pizza.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">Pizza</h2>
+                        <div class="cart-price">
+                            <span class="price">80$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/chickenbiryani.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">ChikenBiryani</h2>
+                        <div class="cart-price">
+                            <span class="price">100$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/nanroti.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">Nan roti with Butter</h2>
+                        <div class="cart-price">
+                            <span class="price">50$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/pannerbuttermasala.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">pannerbuttermasala</h2>
+                        <div class="cart-price">
+                            <span class="price">120$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/pannermalaikopta.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">paneermalaikopta</h2>
+                        <div class="cart-price">
+                            <span class="price">90$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/delux thali.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">delux thali</h2>
+                        <div class="cart-price">
+                            <span class="price">150$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/frychickenmasala.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">Fry chicken</h2>
+                        <div class="cart-price">
+                            <span class="price">110$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/vegbiryani.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">vegbiryani</h2>
+                        <div class="cart-price">
+                            <span class="price">90$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/vegcheeseburrger.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">vegcheeseburrger</h2>
+                        <div class="cart-price">
+                            <span class="price">150$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/tondorichicken.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">tondorichicken</h2>
+                        <div class="cart-price">
+                            <span class="price">130$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="./images/aloo pratha.jpg" alt="">
+                        </div>
+                        <h2 class="product-tittle">alooparathe</h2>
+                        <div class="cart-price">
+                            <span class="price">30$</span>
+                            <i class="fa-solid fa-bag-shopping add-cart" title="add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+           
+            </div>
+           
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

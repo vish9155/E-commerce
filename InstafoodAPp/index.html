@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="containner">
+        <div class="navbar">
+            <ul>
+                <li><a href="#"><img src="../Resturant/images/meeshoLogo.svg" height="20px" width="120px" alt=""></a>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li id="inpsearch"><input type="text" placeholder="Search a Dish or Resturant "><i
+                        class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href="#">Profile</a>
+                    <!-- <div class="dropdown">
+                    <ol>
+                    <li><a href="#">Photo</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ol>
+                </div> -->
+                </li>
+                <li class="cart-icon"><i class="fa-solid fa-cart-shopping"><span class="cart-item-count"></span></i>
+                </li>
+            </ul>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-xmark cart-close"></i>
+            <h2 class="cart-tittle">Your Cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <img src="../Resturant/images/aloo pratha.jpg" alt="">
+                    <div class="cart-details">
+                        <h2 class="cart-product-tittle">Allo paratha</h2>
+                        <span class="cart-price">$0</span>
+                        <div class="cart-quantity">
+                            <button id="decrement">-</button>
+                            <span class="number">1</span>
+                            <button id="increment">+</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div> -->
+            </div>
+            <div class="cart-total">
+                <div class="total-tittle">Total</div>
+                <div class="total-price">0</div>
+            </div>
+            <button class="buy">buynow</button>
+        </div>
+        <div class="main">
+            <div class="timer">
+                <div class="timercenter">
+                    <div class="first">Sales Start On 17th Aug</div>
+                    <div class="second">
+                        <div class="times">
+                            <div class="days">00   </div>
+                                <h2>Days</h2>
+                            
+                        </div>
+                        <div class="times">
+                             <div class="hours">00   </div>
+                                <h2>Hours</h2>
+                         
+                        </div>
+                        <div class="times">
+                             <div class="minutes">00   </div>
+                                <h2>Minutes</h2>
+                       
+                        </div>
+                        <div class="times">
+                             <div class="seconds">00   </div>
+                                <h2>Seconds</h2>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="center">
+                    <div class="images" onmouseenter="playpause('pause')" onmouseleave="playpause('play')">
+                        <div class="top">
+                            <img src="../Resturant/images/vegcheeseburrger.jpg" alt="">
+                            <img src="../Resturant/images/vegbiryani.jpg" alt="">
+                            <img src="../Resturant/images/pannerbuttermasala.jpg" alt="">
+                            <img src="../Resturant/images/aloo pratha.jpg" alt="">
+                            <img src="../Resturant/images/pannermalaikopta.jpg" alt="">
+                            <img src="../Resturant/images/nanroti.jpg" alt="">
+                            <img src="../Resturant/images/pannerbuttermasala.jpg" alt="">
+                            <img src="../Resturant/images/pizza2.jpg" alt="">
+                            <img src="../Resturant/images/pizza.jpg" alt="">
+                        </div>
+                        <button id="btnleft" class="btn" onclick="prev()"><i class="fa-solid fa-angle-left"></i></i></button>
+                        <button id="btnright" onclick="next()" class="btn"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                    <div class="bottom">
+                        <!-- <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tittle">Food's Shop</div>
+            <div class="product-content">
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="../Resturant/images/aloo pratha.jpg" alt="">
+                    </div>
+                    <h2 id="food-tittle">Allo parath</h2>
+                    <div class="price-button">
+                        <span class="price">$10</span>
+                        <i class="fa-solid fa-bag-shopping addcart"></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="../Resturant/images/pannerburger.jpg" alt="">
+                    </div>
+                    <h2 id="food-tittle">pannerburger</h2>
+                    <div class="price-button">
+                        <span class="price">$100</span>
+                        <i class="fa-solid fa-bag-shopping addcart"></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="../Resturant/images/pannerbuttermasala.jpg " alt="">
+                    </div>
+                    <h2 id="food-tittle">pannerbuttermasala</h2>
+                    <div class="price-button">
+                        <span class="price">$100</span>
+                        <i class="fa-solid fa-bag-shopping addcart"></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="../Resturant/images/pannermalaikopta.jpg " alt="">
+                    </div>
+                    <h2 id="food-tittle">pannermalaikopta</h2>
+                    <div class="price-button">
+                        <span class="price">$100</span>
+                        <i class="fa-solid fa-bag-shopping addcart"></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="../Resturant/images/chickenbiryani.jpg " alt="">
+                    </div>
+                    <h2 id="food-tittle">chickenbiryani</h2>
+                    <div class="price-button">
+                        <span class="price">$100</span>
+                        <i class="fa-solid fa-bag-shopping addcart"></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="img-box">
+                        <img src="../Resturant/images/delux thali.jpg " alt="">
+                    </div>
+                    <h2 id="food-tittle">delucx thali</h2>
+                    <div class="price-button">
+                        <span class="price">$100</span>
+                        <i class="fa-solid fa-bag-shopping addcart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            hello
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

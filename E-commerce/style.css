@@ -152,6 +152,7 @@ header{
     border: none;
     font-size: 20px;
     cursor: pointer;
+    
 }
 .cart-quantity #decrement{
     color: #999;
@@ -201,3 +202,14 @@ cursor: default;
     cursor: pointer;
 }
 
+@media only screen and (max-width:360)
+{
+    .product-content{
+  
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    
+}
+.cart{
+    width: 100%;
+}
+}

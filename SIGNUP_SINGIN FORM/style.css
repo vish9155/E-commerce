@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .containner{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(kqtQKB.jpg);
     background-position: center;
@@ -16,7 +16,7 @@
    
 }
 .form-box{
-    height: 90vh;
+    height:auto;
     width: 90%;
     max-width: 450px;
     min-width: 350px;
@@ -90,10 +90,7 @@ form p a{
      cursor: pointer;
      transition:background 1s;
 }
-.input-group{
-    height: 400px;
 
-}
 .inputgrp #pd{
     height: 100px;
     width:70%;

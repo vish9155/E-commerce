@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">LOGO</div>
+            <div class="input-box"><input type="search" placeholder="Search a product"><i
+                    class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <div class="carticon">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div class="cart-item-count"></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div class="cart">
+                <i class="fa-solid fa-xmark cart-close"></i>
+                <h2 class="cart-tittle">Your Cart</h2>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="../Resturant/images/aloo pratha.jpg" height="100px" width="100px" alt="">
+                        <div class="cart-details">
+                            <h2 class="cart-product-tittle">Allo Paratha</h2>
+                            <span class="cart-price"></span>
+                            <div class="cart-quantity">
+                                <button id="decrement">-</button>
+                                <span class="number">1</span>
+                                <button id="increment">+</button>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-trash remove-item" ></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <h2 class="total-tittle">Total Price:</h2>
+                    <span class="total-price">0</span>
+                </div>
+
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </section>
+         <div class="slider">
+                <div class="center">
+                    <div class="images" onmouseenter="playpause('pause') " onmouseleave="playpause('play')">
+                    <img src="../Resturant/images/pizza.jpg" alt="">
+                    <img src="../Resturant//images/pannermalaikopta.jpg" alt="">
+                    <img src="../Resturant/images/murgmasalam.jpg" alt="">
+                    <img src="../Resturant/images/chickenbiryani.jpg" alt="">
+                    <img src="../Resturant/images/frychickenmasala.jpg" alt="">
+                    </div>
+                    <button class="btn" id="btnleft" onclick="prev()"><i class="fa-solid fa-angle-left"></i></button>
+                       <button class="btn" id="btnright" onclick="next()"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        <section>
+           
+            <div class="shop">
+                <h2 class="shop-tittle">Fashion And Food Shop</h2>
+                <div class="product-content">
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/aloo pratha.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">Allo Paratha</h2>
+                        <div class="price">
+                            <span class="product-price">$100</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/chickenbiryani.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">chickenbiryani</h2>
+                        <div class="price">
+                            <span class="product-price">$120</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/vegcheeseburrger.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">vegcheeseburrger</h2>
+                        <div class="price">
+                            <span class="product-price">$60</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/vegbiryani.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">vegbiryani</h2>
+                        <div class="price">
+                            <span class="product-price">$80</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/murgmasalam.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">murgmasalam</h2>
+                        <div class="price">
+                            <span class="product-price">$220</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/pannerbuttermasala.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">pannerbuttermasala</h2>
+                        <div class="price">
+                            <span class="product-price">$150</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/pannermalaikopta.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">pannermalaikopta</h2>
+                        <div class="price">
+                            <span class="product-price">$99</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/tondorichicken.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">Allo Paratha</h2>
+                        <div class="price">
+                            <span class="product-price">$139</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/frychickenmasala.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">frychickenmasala</h2>
+                        <div class="price">
+                            <span class="product-price">$129</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="img-box">
+                            <img src="../Resturant/images/pannerburger.jpg" alt="">
+                        </div>
+                        <h2 class="Product-tittle">pannerburger</h2>
+                        <div class="price">
+                            <span class="product-price">$50</span>
+                            <i class="fa-solid fa-bag-shopping add-cart"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footer1">
+                    <h2 class="tittle1">Get To Know Us</h2>
+                    <ul>
+                        <li><a href="#1">About Logo</a></li>
+                        <li><a href="#2">Careers</a></li>
+                        <li><a href="#3">Press Release</a></li>
+                        <li><a href="#4">Logo Science</a></li>
+                    </ul>
+                </div>
+                <div class="footer1">
+                    <h2 class="tittle1">Contact With Us</h2>
+                    <ul>
+                        <li><a href="mailto:vishaljpkumar4970@gmail.com"><i
+                                    class="fa-solid fa-envelope mail"></i>vishaljpkumar4970@gmail.co</a></li>
+                        <li><a href="tel:9155014125"><i class="fa-solid fa-phone phone"></i>9155014125</a></li>
+                        <li><a href="https://wa.me/9155014125"><i
+                                    class="fa-brands fa-whatsapp whatsapp"></i>9155014125</a></li>
+                        <li><a href="sms:9155014125"><i class="fa-solid fa-comment sms"></i>9155014125</a></li>
+                    </ul>
+                </div>
+                <div class="footer1">
+                    <h2 class="tittle1">Make money with Us</h2>
+                    <ul>
+                        <li><a href="#5">Sell on Logo</a></li>
+                        <li><a href="#5">Sell Under Logo Accelerator</a></li>
+                        <li><a href="#5">Logo Global Selling</a></li>
+                        <li><a href="#5">Supply To Logo</a></li>
+                        <li><a href="#5">Becomes an Affiliate</a></li>
+                        <li><a href="#5">Fullfilement by Amazon</a></li>
+                        <li><a href="#5">Advertise your Product</a></li>
+                        <li><a href="#5">Amazon Pay on Merchants</a></li>
+                        <li><a href="#5">Protect And Build your Brand</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer1">
+                    <h2 class="tittle1">Let Us Help you</h2>
+                    <ul>
+                        <li><a href="#5">Your Account</a></li>
+                        <li><a href="#5">Return Center</a></li>
+                        <li><a href="#5">Recalls And Product Safety Alerts</a></li>
+                        <li><a href="#5">100% Purchase Protection</a></li>
+                        <li><a href="#5">Logo App Download</a></li>
+                        <li><a href="#5">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

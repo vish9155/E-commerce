@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containner {
+    width: 100vw;
+    height: 100vh;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.to-do-app {
+    background-color: #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 0 1px gray;
+    width: 650px;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px;
+    color: green;
+}
+
+h2 img {
+    height: 30px;
+    width: 120px;
+
+}
+
+.input-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    height: 40px;
+
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    height: 40px;
+    background: coral;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0 2px 50px;
+}
+
+ul li {
+    margin: 10px;
+    position: relative;
+    padding: 15px 10px 15px 50px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+    background: url('../to_do_list/ci.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    width: 10px;
+    background: url('../to_do_list/R.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 10px
+
+}
+span{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    color: black;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+span:hover{
+    color: red;
+    background: gray;
+}
